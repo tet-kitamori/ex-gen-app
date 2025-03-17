@@ -22,4 +22,13 @@ Express を使う場合、Expressに必要なモジュールやファイルを�
 express --view=ejs ex-gen-app    ；ex-gen-appのところはアプリ名
 cd ex-gen-app                    ；アプリケーション用フォルダに移動
 npm install                      ；必要なパッケージをインストールする
+```
+その後、`npm start`　でサーバが起動される。
+ブラウザから、`http://localhost:3000` をアクセスすると、Welcomeメッセージが帰る。
+
+アプリケーションは、これをベースにView、Controlの部分を主として追加／改造する。
+
+### 注記
+
+このリポジトリには、基本的に修正を加えないフォルダ /bin と /node-modules は含んでいない。
 
