@@ -16,3 +16,10 @@ Express を使う場合、Expressに必要なモジュールやファイルを�
 `> npm install -g express-generator`
 
 ## Expressジェネレータでアプリを作るフォルダを生成する
+
+次のような手順で進める。
+```
+express --view=ejs ex-gen-app    ；ex-gen-appのところはアプリ名
+cd ex-gen-app                    ；アプリケーション用フォルダに移動
+npm install                      ；必要なパッケージをインストールする
+
