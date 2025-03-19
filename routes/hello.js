@@ -5,7 +5,7 @@ router.get('/', (req, res, next) => {
     var data = {
         title: 'Expresso',
         greet: 'Hello!',
-        id: '',
+        username: '',
         content : '行楽シーズンです。あなたは何をしたいですか？'
     };
     res.render('hello', data);
@@ -16,8 +16,8 @@ router.post('/post', (req, res, next) => {
     var data = {
         title: 'Expresso',
         greet: 'Hello!',
-        id: req.body.id,
-        content: req.body.id + 'さんは「' + msg + '」と送信しました。'
+        username: req.body.uname,
+        content: req.body.uname + 'さんは「' + msg + '」と送信しました。'
     };
     res.render('hello', data);
 });
